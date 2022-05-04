@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MY CARD GAME</title>
+</head>
+<body>
+    <section class="container">
+        <h1 id="header">MY CARD GAME</h1>
+        <section class="contain">
+            <div class="playerOne">
+                <h1>PLAYER ONE</h1>
+                <img src="https://deckofcardsapi.com/static/img/QC.png" id="playerOne" alt="Queen">
+                <p>Points: <span id="playerOnePoint"></span></p>
+            </div>
+            <div class="win">
+                <p id="result"></p>
+                <p id="playAgain">PLAY</p>
+            </div>
+            <div class="playerTwo">
+                <h1>PLAYER TWO</h1>
+                <img src="https://deckofcardsapi.com/static/img/KS.png" id="playerTwo" alt="King">
+                <p>Points: <span id="playerTwoPoint"></span></p>
+            </div>
+        </section>
+        <div class="btn">
+            <h3 id="rulesBtn">RULES</h3>
+            <h3 id="refresh">REFRESH</h3>
+        </div>
+       
+       <div class="rules">
+           <ul type="square">
+               <li>The cards are picked at random and given to players at random</li>
+               <li>The card with the largest number of the two cards takes a point in the session</li>
+               <li>The card is draw, the card will be reshuffled and played again</li>
+               <li>The player with the most number of points wins the game </li>
+               <li>NOTE: These cards equal to this numbers
+                   <ul>
+                       <li>ACE = 14</li>
+                       <li>KING = 13</li>
+                       <li>QUEEN = 12</li>
+                       <li>JACK = 11</li>
+                       <li>All other card maintain thier repective numbers.</li>
+                   </ul>
+               </li>
+           </ul>
+           <p id="ok-btn">OK</p>
+       </div>
+       <div class="final">
+           <p id="final-result"></p>
+           <p id="final-btn">OK</p>
+       </div>
+    </section>
+    <p style="font-size: 18px;text-align: center;padding-bottom: 4rem;">Designed By <a href="https://github.com/Abiona-0lushola-Jude">Olushola</a></p>
+    <script src="app.js"></script>
+</body>
+</html>

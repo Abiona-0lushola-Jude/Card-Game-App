@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+    box-sizing: border-box;
+}
+body{
+    font-family:monospace;
+    background: #f5f3f4;
+}
+.container{
+    width: max-content;
+    height: max-content;
+    padding: 3rem;
+    margin: 4rem auto;
+    position: relative;
+}
+.contain{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+}
+#header{
+    margin-block: 0.5rem 1.6rem;
+    text-align: center;
+}
+.rules{
+    position: absolute;
+    border-radius: 1rem;
+    width: 20rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+    top: 6rem;
+    left: 11rem;
+    background-color: white;
+    display: none;
+}
+ul li{
+    margin-block: 0.5rem;
+}
+.rules.open{
+    display: block;
+}
+.win{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result{
+    border: 1px solid;
+    text-align: center;
+    margin-block: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(223, 196, 41);
+    color: white;
+}
+body.open  .rules{
+    display: block;
+}
+.rules p{
+    margin-block: 1rem;
+    border: 1px solid;
+    width: max-content;
+    font-weight: 1500;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+img{
+    margin-block: 1rem;
+    width: 13rem;
+    box-shadow: 2px 2px 2px gray,
+                -2px -2px 2px gray;
+    height: 16rem;
+}
+#playAgain{
+    border: 1px solid;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+    font-weight: 900;
+    background-color:#6a040f ;
+    color: white;
+}
+#playerOnePoint,
+#playerTwoPoint{
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border: 1px solid;
+    display: block;
+}
+h3{
+    margin-top: 1.5rem;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.final{
+    width: 11rem;
+    height: 4.4rem;
+    box-shadow: 2px 2px 2px gray,
+                -2px -2px 2px gray;
+    position: absolute;
+    background-color: white;
+    top: 13rem;
+    left: 15rem;
+    padding: 0.3rem 0.5rem;
+    display: none;
+}
+.final.open{
+    display: block;
+}
+#final-btn{
+    width: max-content;
+    padding: 0.3rem;
+    border: 1px solid;
+    margin-top: 0.2rem;
+}
+a{
+    color: rgb(188, 136, 4);
+}
+@media screen and (max-width:375px) {
+    .container{
+        padding-top: 1rem;
+        padding-inline: 2rem;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .playerOne,
+    .playerTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rules{
+        width: 17rem;
+        top: 9rem;
+        left: 0.1rem;
+    }
+    .final{
+        left: 3rem;
+    }
+}
